@@ -20,3 +20,31 @@ Content is written in Markdown and organized for clarity, longevity, and version
 
 ## Structure
 
+posts/ # Chronological blog-style entries
+essays/ # Timeless reflections and opinions
+notes/ # Framework notes and references
+drafts/ # Unfinished or exploratory writing
+
+
+---
+
+## Intent and limitations
+
+The material in this repository is provided for informational purposes only.  
+Context matters: security decisions, risks, and controls should always be evaluated against specific environments and requirements.
+
+Any sensitive or identifying information has been removed or abstracted.
+
+---
+
+## License
+
+This repository is licensed under the **MIT License**.
+
+If you reference or reuse this material, attribution is appreciated.
+
+---
+
+## Maintenance
+
+Entries may be updated over time to improve accuracy, clarity, or completeness as understanding evolves.

@@ -29,10 +29,9 @@ It is a long-term record of how I think about security.
 
 ## ✍️ Latest Post
 
-🆕 **Is This Docker Image Secure?**  
+🆕 **Is This Docker Image Secure?**  Feb/19/2026
 From Pi-hole to building a full vulnerability management pipeline with Trivy and DefectDojo.
-
-👉 [Read the full post here](./posts/is-this-docker-image-secure.md)
+👉 [Read the full post here](feb092026_IsThisDockerImageSecure.md)
 
 ---
 

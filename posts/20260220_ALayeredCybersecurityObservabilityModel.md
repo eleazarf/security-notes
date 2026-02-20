@@ -71,7 +71,7 @@ This is where cybersecurity becomes visible as business impact.
 
 ## 🔗 How Risk Impacts Revenue
 
-![How Risk Impacts Revenue](..posts\images\mermaid-diagram-2026-02-20-092341.png)
+![How Risk Impacts Revenue](../posts/images/mermaid-diagram-2026-02-20-092341.png)
 
 ```mermaid
 flowchart TD

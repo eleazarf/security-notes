@@ -1,43 +1,92 @@
-# security-notes
+# 🛡️ security-notes
 
-This repository serves as a personal knowledge archive, focusing on cybersecurity, risk management, and security architecture.
-
-The content here reflects real-world experience: lessons learned, opinions formed over time, and practical interpretations of security frameworks and operational challenges. It is written deliberately and revised as understanding evolves.
-
-This is not a product, a tutorial series, or marketing content. It is a long-term record of how I think about security.
+> A living archive of thoughts, lessons, and practical reflections on cybersecurity, risk management, and security architecture.
 
 ---
 
-## What you’ll find here
+## 📖 About This Repository
 
-- **Posts** – Time-bound reflections and narratives based on specific moments, projects, or experiences  
-- **Essays** – Longer-form, opinionated writing on enduring security topics  
-- **Notes** – Practical references, framework interpretations, and distilled guidance  
+This repository serves as a **personal knowledge archive**.
 
-Content is written in Markdown and organized for clarity, longevity, and versioning.
+It captures:
 
----
+- Real-world lessons  
+- Evolving opinions  
+- Practical interpretations of frameworks  
+- Operational security challenges  
 
-## Structure
+Everything here is written deliberately and revised as understanding evolves.
 
-posts/ # Chronological blog-style entries
-essays/ # Timeless reflections and opinions
-notes/ # Framework notes and references
-drafts/ # Unfinished or exploratory writing
+This is **not**:
 
+- ❌ A product  
+- ❌ A tutorial series  
+- ❌ Marketing content  
 
----
-
-## Intent and limitations
-
-The material in this repository is provided for informational purposes only.  
-Context matters: security decisions, risks, and controls should always be evaluated against specific environments and requirements.
-
-Any sensitive or identifying information has been removed or abstracted.
+It is a long-term record of how I think about security.
 
 ---
 
-## License
+## ✍️ Latest Post
+
+🆕 **Is This Docker Image Secure?**  
+From Pi-hole to building a full vulnerability management pipeline with Trivy and DefectDojo.
+
+👉 [Read the full post here](./posts/is-this-docker-image-secure.md)
+
+---
+
+## 📂 What You’ll Find Here
+
+### 📰 Posts
+Time-bound reflections based on specific moments, projects, or experiences.
+
+### 🧠 Essays
+Longer-form, opinionated writing on enduring security topics.
+
+### 📓 Notes
+Practical references, distilled guidance, and framework interpretations.
+
+All content is written in **Markdown** and organized for clarity, longevity, and versioning.
+
+---
+
+## 🗂 Repository Structure
+
+```
+posts/      # Chronological blog-style entries
+essays/     # Timeless reflections and opinions
+notes/      # Framework notes and references
+drafts/     # Unfinished or exploratory writing
+```
+
+---
+
+## 🎯 Intent & Limitations
+
+The material in this repository is provided for **informational purposes only**.
+
+Security decisions, risks, and controls must always be evaluated within their specific context.
+
+All sensitive or identifying information has been removed or abstracted.
+
+---
+
+## 🔄 Maintenance Philosophy
+
+This repository is a **living document**.
+
+Entries may be updated over time to improve:
+
+- Accuracy  
+- Clarity  
+- Completeness  
+
+As understanding evolves, so does the writing.
+
+---
+
+## 📜 License
 
 This repository is licensed under the **MIT License**.
 
@@ -45,6 +94,10 @@ If you reference or reuse this material, attribution is appreciated.
 
 ---
 
-## Maintenance
+## 🚀 Why This Exists
 
-Entries may be updated over time to improve accuracy, clarity, or completeness as understanding evolves.
+Security is not static.
+
+It is iterative, contextual, and shaped by experience.
+
+This repository exists to document that evolution.

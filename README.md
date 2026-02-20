@@ -31,7 +31,7 @@ It is a long-term record of how I think about security.
 
 🆕 **Is This Docker Image Secure?**  Feb/19/2026
 From Pi-hole to building a full vulnerability management pipeline with Trivy and DefectDojo.
-👉 [Read the full post here](feb092026_IsThisDockerImageSecure.md)
+👉 [Read the full post here](posts\feb092026_IsThisDockerImageSecure.md)
 
 ---
 
@@ -54,7 +54,6 @@ All content is written in **Markdown** and organized for clarity, longevity, and
 
 ```
 posts/      # Chronological blog-style entries
-essays/     # Timeless reflections and opinions
 notes/      # Framework notes and references
 drafts/     # Unfinished or exploratory writing
 ```

@@ -29,8 +29,8 @@ It is a long-term record of how I think about security.
 
 ## ✍️ Latest Post
 
-🆕 **Is This Docker Image Secure?**  Feb/20/2026
-From Pi-hole to building a full vulnerability management pipeline with Trivy and DefectDojo.
+🆕 **Dashboard Design — A Layered Cybersecurity Observability Model**  Feb/20/2026
+Designing dashboards is not about adding more charts it's about bulding a layered, security-aware observability model.
 👉 [Read the full post here](posts\20260220_ALayeredCybersecurityObservabilityModel)
 
 

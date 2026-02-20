@@ -121,6 +121,9 @@ If this layer is compromised, trust erodes fast.
 
 ## 🔗 UX + Security → Business Impact
 
+![UX + Security → Business Impact](../posts/images/mermaid-diagram-2026-02-20-093710.png)
+
+
 ```mermaid
 flowchart TD
     ScriptTamper --> TrustLoss

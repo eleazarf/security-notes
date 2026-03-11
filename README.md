@@ -8,7 +8,7 @@
 
 🆕 **PCI DSS 4.0 — Securing the Browser Payment Page (Req. 6.4.3)**  Mar/11/2026  
 How malicious JavaScript and client-side attacks threaten payment pages and what PCI DSS 4.0 requires to mitigate these risks.  
-👉 [Read the full post here](posts\20260311_Securing the Browser Payment Page.md)
+👉 [Read the full post here](posts\20260311_SecuringtheBrowserPaymentPage.md)
 
 🆕 **Dashboard Design — A Layered Cybersecurity Observability Model**  Feb/20/2026
 Designing dashboards is not about adding more charts it's about bulding a layered, security-aware observability model.

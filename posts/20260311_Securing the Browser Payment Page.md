@@ -2,10 +2,8 @@
 ## Protecting cardholder data from malicious JavaScript and client-side attacks
 
 Estimated reading time: **6 minutes**
-
 ---
 TL;DR
----
 
 To protect payment pages under PCI DSS 4.0 Requirement 6.4.3:
 
@@ -14,6 +12,7 @@ To protect payment pages under PCI DSS 4.0 Requirement 6.4.3:
 • Continuously monitor for unauthorized script changes  
 
 These controls help prevent malicious JavaScript from stealing cardholder data in the browser.
+
 ---
 
 When a customer enters credit card information on a website, we might assume most of the risk lies in the backend systems.

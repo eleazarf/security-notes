@@ -3,15 +3,12 @@
 
 Estimated reading time: **6 minutes**
 ---
-**TL;DR**
 
-To protect payment pages under PCI DSS 4.0 Requirement 6.4.3:
+Estimated reading time: **6 minutes**
 
-• Control which scripts can run on payment pages  
-• Enforce browser security policies such as CSP and SRI  
-• Continuously monitor for unauthorized script changes  
-
-These controls help prevent malicious JavaScript from stealing cardholder data in the browser.
+| 🧭 Article Navigation | ⚡ TL;DR |
+|---|---|
+| • [The Risk: JavaScript Skimming Attacks](#the-risk-javascript-skimming-attacks) <br> • [What PCI DSS 6.4.3 Requires](#what-pci-dss-643-requires) <br> • [Payment Page Protection Architecture](#a-clean-architecture-for-payment-page-protection) <br> • [Key Security Controls Explained](#key-security-controls-explained) <br> • [Why This Matters](#why-this-matters) <br> • [Final Thoughts](#final-thoughts) | To protect payment pages under **PCI DSS 4.0 Requirement 6.4.3**: <br><br> • Control which scripts can run on payment pages <br> • Enforce browser security policies such as **CSP** and **SRI** <br> • Continuously monitor for unauthorized script changes <br><br> These controls help prevent malicious JavaScript from stealing cardholder data in the browser. |
 
 ---
 
@@ -145,10 +142,12 @@ This prevents:
 **[Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)** ensures that external scripts have not been modified.
 
 ### Example
+```http
 <script src="https://cdn.example.com/library.js"
 integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K..."
 crossorigin="anonymous">
 </script>
+```
 
 If the script content changes, the browser blocks it.
 
@@ -180,7 +179,9 @@ This may include:
 - Alerting on unauthorized modifications
 - Several security platforms provide these capabilities.
 
+---
 Why This Matters
+---
 
 Historically, many organizations focused their PCI security controls on backend systems.
 

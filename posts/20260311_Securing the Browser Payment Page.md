@@ -3,6 +3,19 @@
 
 Estimated reading time: **6 minutes**
 
+---
+TL;DR
+---
+
+To protect payment pages under PCI DSS 4.0 Requirement 6.4.3:
+
+• Control which scripts can run on payment pages  
+• Enforce browser security policies such as CSP and SRI  
+• Continuously monitor for unauthorized script changes  
+
+These controls help prevent malicious JavaScript from stealing cardholder data in the browser.
+---
+
 When a customer enters credit card information on a website, we might assume most of the risk lies in the backend systems.
 
 In reality, **[One of the most dangerous places for payment data is the customer’s browser itself](https://jscrambler.com/blog/battle-for-payment-card-data)**.
@@ -86,46 +99,23 @@ A secure payment page architecture typically combines:
 
 Below is a simplified architecture model organizations can use to meet PCI DSS requirements.
 
-                ┌─────────────────────────────┐
-                │        Customer Browser      │
-                │                             │
-                │  Payment Page (Checkout)    │
-                │                             │
-                │  Security Controls:         │
-                │  • Content Security Policy  │
-                │  • Subresource Integrity    │
-                │  • Script Allowlisting      │
-                └───────────────┬─────────────┘
-                                │
-                                │ HTTPS
-                                │
-                ┌───────────────▼─────────────┐
-                │        Web Application      │
-                │                             │
-                │  Serves Payment Page        │
-                │  Implements:                │
-                │  • Script inventory         │
-                │  • CSP headers              │
-                │  • Secure script hosting    │
-                └───────────────┬─────────────┘
-                                │
-                                │
-                ┌───────────────▼─────────────┐
-                │     Script Monitoring       │
-                │      / Integrity Tools      │
-                │                             │
-                │  • Page integrity scanning  │
-                │  • Script change detection  │
-                │  • Security alerting        │
-                └───────────────┬─────────────┘
-                                │
-                                │
-                ┌───────────────▼─────────────┐
-                │      Payment Processor      │
-                │                             │
-                │  Secure transaction         │
-                │  processing                 │
-                └─────────────────────────────┘
+```mermaid
+flowchart TD
+
+A["Customer Browser<br>Payment Page"]
+B["Web Application<br>Checkout Service"]
+C["Script Monitoring<br>Integrity Tools"]
+D["Payment Processor"]
+
+A -->|HTTPS| B
+B --> C
+B --> D
+
+style A fill:#cfe8ff,stroke:#1f78b4,stroke-width:2px
+style B fill:#fff3cd,stroke:#d39e00,stroke-width:2px
+style C fill:#e2d5f8,stroke:#6f42c1,stroke-width:2px
+style D fill:#d4edda,stroke:#28a745,stroke-width:2px
+```
 
 This **layered approach** helps protect payment pages against unauthorized script execution.
 
@@ -135,7 +125,7 @@ This **layered approach** helps protect payment pages against unauthorized scrip
 
 ## 1. Content Security Policy (CSP)
 
-A **Content Security Policy** is a browser security mechanism that restricts where scripts can be loaded from.
+A **[Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)** is a browser security mechanism that restricts where scripts can be loaded from.
 
 ### Example
 
@@ -154,7 +144,7 @@ Data exfiltration to attacker domains
 
 2. Subresource Integrity (SRI)
 
-Subresource Integrity ensures that external scripts have not been modified.
+**[Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)** ensures that external scripts have not been modified.
 
 Example
 <script src="https://cdn.example.com/library.js"
@@ -222,7 +212,9 @@ Page integrity validation
 
 organizations can significantly reduce the risk of browser-based card data theft.
 
+---
 Final Thoughts
+---
 
 Protecting payment pages is no longer optional. As attackers increasingly target browser-based environments, organizations must adopt security controls that extend beyond traditional server-side protections.
 
@@ -235,6 +227,5 @@ Browser security policies
 Continuous monitoring
 
 When implemented correctly, these controls help ensure that the payment page customers trust remains secure.
-
 
 ---

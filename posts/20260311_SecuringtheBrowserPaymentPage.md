@@ -1,7 +1,6 @@
 # Securing the Browser Payment Page: Understanding PCI DSS 4.0 Requirement 6.4.3  
 ## Protecting cardholder data from malicious JavaScript and client-side attacks
 
-Estimated reading time: **6 minutes**
 ---
 
 Estimated reading time: **6 minutes**

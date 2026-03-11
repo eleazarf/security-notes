@@ -132,16 +132,15 @@ A **[Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web
 Content-Security-Policy:
 script-src 'self' https://trusted-cdn.com
 connect-src https://payment-api.company.com
+```
 
 This prevents:
 
-Malicious script injections
+- Malicious script injections
+- Unauthorized third-party resources
+- Data exfiltration to attacker domains
 
-Unauthorized third-party resources
-
-Data exfiltration to attacker domains
-
-2. Subresource Integrity (SRI)
+## 2. Subresource Integrity (SRI)
 
 **[Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)** ensures that external scripts have not been modified.
 
@@ -155,41 +154,31 @@ If the script content changes, the browser blocks it.
 
 This is particularly important when using CDN-hosted libraries.
 
-3. Script Inventory and Authorization
+## 3. Script Inventory and Authorization
 
 Organizations must maintain a documented inventory of all scripts used on payment pages, including:
 
-First-party scripts
-
-Third-party libraries
-
-Analytics tools
-
-Tag managers
-
-Each script should be:
-
-Approved
-
-Tracked
-
-Periodically reviewed
+- First-party scripts
+- Third-party libraries
+- Analytics tools
+- Tag managers
+- Each script should be:
+- Approved
+- Tracked
+- Periodically reviewed
 
 This helps detect unauthorized additions.
 
-4. Payment Page Monitoring
+## 4. Payment Page Monitoring
 
 PCI DSS Requirement 11.6.1 complements Requirement 6.4.3 by requiring detection of unauthorized changes to payment pages.
 
 This may include:
 
-Page integrity monitoring
-
-Script change detection
-
-Alerting on unauthorized modifications
-
-Several security platforms provide these capabilities.
+- Page integrity monitoring
+- Script change detection
+- Alerting on unauthorized modifications
+- Several security platforms provide these capabilities.
 
 Why This Matters
 
@@ -201,13 +190,10 @@ PCI DSS 4.0 reflects this shift by emphasizing controls that protect the payment
 
 By implementing controls such as:
 
-Content Security Policy
-
-Subresource Integrity
-
-Script monitoring
-
-Page integrity validation
+- Content Security Policy
+- Subresource Integrity
+- Script monitoring
+- Page integrity validation
 
 organizations can significantly reduce the risk of browser-based card data theft.
 
@@ -219,11 +205,9 @@ Protecting payment pages is no longer optional. As attackers increasingly target
 
 PCI DSS Requirement 6.4.3 encourages a layered approach that combines:
 
-Script governance
-
-Browser security policies
-
-Continuous monitoring
+- Script governance
+- Browser security policies
+- Continuous monitoring
 
 When implemented correctly, these controls help ensure that the payment page customers trust remains secure.
 

@@ -3,7 +3,7 @@
 
 Estimated reading time: **6 minutes**
 ---
-TL;DR
+**TL;DR**
 
 To protect payment pages under PCI DSS 4.0 Requirement 6.4.3:
 
@@ -144,7 +144,7 @@ This prevents:
 
 **[Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)** ensures that external scripts have not been modified.
 
-Example
+### Example
 <script src="https://cdn.example.com/library.js"
 integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K..."
 crossorigin="anonymous">
